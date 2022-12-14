@@ -1,0 +1,31 @@
+* {
+    background-color: gray;
+}
+
+.azul {
+    background-color: lightblue;
+}
+
+.chico {
+    display: block;
+    height: 50px;
+    margin: 10px 10px;
+}
+
+.grande {
+    display: block;
+    height: 80px;
+    margin: 10px 10px;
+}
+
+.container {
+    display: inline;
+    overflow: hidden;
+}
+
+.mediano {
+    width: 48%;
+    height: 80px;
+    margin: 10px;
+    float: left;
+}

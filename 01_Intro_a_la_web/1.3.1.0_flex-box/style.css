@@ -1,0 +1,31 @@
+.padre {
+    background-color: orange;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.hijo {
+    background-color: purple;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    color: white;
+    display: flex; /*Para tambien poder ordenar los elementos hijos */
+}
+.uno {
+    order: 3;
+}
+.dos {
+    order: 1;
+}
+.tres {
+    order: 2;
+}
+.cuatro {
+    order: 1;
+}
+.cinco {
+    order: 0;
+}
