@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionales</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <head>
+        <h1>Condicionales</h1>
+        <h2>Ejercicios</h2>
+    </head>
+    <main>
+        <div>
+            <h3>Ejercicio 0</h3>
+            <p>Solicitar al usuario que responda a la pregunta (“¿Eres bellisimo/a?”), en
+            caso de contestar sí, responder “Ciertamente”, en caso de contestar no,
+            responder: “No te creo”.</p>
+            <input id="inputEjercicio0" type="text" placeholder="Escriba su respuesta">
+            <h5>Resultado: <span id="resultado0"></span></h5>
+            <button type="submit" onclick="ejercicio0()">Enviar</button>
+        </div>
+        <div>
+            <h3>Ejercicio 1</h3>
+            <p>Solicitar al usuario un número, y determinar si es divisible entre dos
+            o no. Mostrando al usuario un mensaje de “x número es divisible entre 2” o “x núm</p>
+            <input id="inputEjercicio1" type="number" placeholder="Ingrese Número">
+            <h5>Resultado: <span id="resultado1"></span></h5>
+            <button type="submit" onclick="ejercicio1()">Enviar</button>
+        </div>
+        <div>
+            <h3>Ejercicio 2</h3>
+            <p>Crear un programa que determine si un número introducido en un Prompt
+            es par o no, la respuesta será mostrada en un Alert.</p>
+            <input id="inputEjercicio2" type="number" placeholder="Ingrese Número">
+            <h5>Resultado: <span id="resultado2"></span></h5>
+            <button type="submit" onclick="ejercicio2()">Enviar</button>
+        </div>
+        <div>
+            <h3>Ejercicio 3</h3>
+            <p>Solicitar al usuario un número de cliente. Si el número es el 1000,
+            imprimir "Ganaste un premio", en caso contrario mostrar el número y el mensaje “Lo sentimos, sigue participando”.</p>
+            <input id="inputEjercicio3" type="number" placeholder="Ingrese Número">
+            <h5>Resultado: <span id="resultado3"></span></h5>
+            <button type="submit" onclick="ejercicio3()">Enviar</button>
+        </div>
+        <div>
+            <h3>Ejercicio 4</h3>
+            <p>Solicitar al usuario que ingrese dos números y mostrar cuál de los dos es menor. No considerar el caso en que ambos números son iguales.</p>
+            <input id="inputEjercicio4-1" type="number" placeholder="Ingrese Número">
+            <input id="inputEjercicio4-2" type="number" placeholder="Ingrese Número">
+            <h5>Resultado: <span id="resultado4"></span></h5>
+            <button type="submit" onclick="ejercicio4()">Enviar</button>
+        </div>
+        <div>
+            <h3>Ejercicio 5</h3>
+            <p>Solicitar al usuario que ingrese tres números y mostrar cuál de los tres es
+            el número mayor. Considerar el caso en que 2 números sean iguales.</p>
+            <input id="inputEjercicio5-1" type="number" placeholder="Ingrese Número">
+            <input id="inputEjercicio5-2" type="number" placeholder="Ingrese Número">
+            <input id="inputEjercicio5-3" type="number" placeholder="Ingrese Número">
+            <h5>Resultado: <span id="resultado5"></span></h5>
+            <button type="submit" onclick="ejercicio5()">Enviar</button>
+        </div>
+        <div>
+            <h3>Ejercicio 6</h3>
+            <p>Requerir al usuario que ingrese un día de la semana e imprimir un mensaje si es lunes, otro mensaje diferente si es viernes, otro mensaje diferente si es sábado o domingo. Si el día ingresado no es ninguno de esos, imprimir otro mensaje.</p>
+            <input id="inputEjercicio6" type="text" placeholder="Ingrese día">
+            <h5>Resultado: <span id="resultado6"></span></h5>
+            <button type="submit" onclick="ejercicio6()">Enviar</button>
+        </div>
+        <div>
+            <h3>Ejercicio 7</h3>
+            <p>Solicitar al usuario una calificación (entre 1 y 10). Luego se debe
+            comprobar que el número efectivamente esté en ese rango, si no lo está
+            imprima un mensaje de error. Si lo está, imprima “reprobado” si la
+            calificación es inferior a 6, “regular” si está entre 6 y 8, “bien” si es 9, y por último, “excelente” si es 10.</p>
+            <input id="inputEjercicio7" type="number" placeholder="Ingrese Número">
+            <h5>Resultado: <span id="resultado7"></span></h5>
+            <button type="submit" onclick="ejercicio7()">Enviar</button>
+        </div>
+        <div>
+            <h3>Ejercicio 8</h3>
+            <p>Escribe un programa que responda a un usuario que quiere comprar un
+                helado en una conocida marca de comida rápida cuánto le costará en
+                función del topping que elija.
+                ● El helado sin topping cuesta 50 MXN.
+                ● El topping de oreo cuesta 10 MXN.
+                ● El topping de KitKat cuesta 15 MXN.
+                ● El topping de brownie cuesta 20 MXN.
+                En caso de no disponer del topping solicitado por el usuario, el programa
+                le indicará “no tenemos este topping, lo sentimos.” y a continuación le
+                informará el precio del helado sin ningún topping.</p>
+            <input id="inputEjercicio8" type="text" placeholder="Ingrese Topping">
+            <h5>Resultado: <span id="resultado8"></span></h5>
+            <button type="submit" onclick="ejercicio8()">Enviar</button>
+        </div>
+        <div>
+            <h3>Ejercicio 9</h3>
+            <p>Un conocido portal de educación en tecnología está ofreciendo
+                programas para aprender a desarrollar aplicaciones. Escribe un programa
+                que le indique a la persona interesada cuánto deberá pagar
+                mensualmente de acuerdo a la opción elegida.
+                El programa educativo contempla 3 diferentes niveles, cada uno con su
+                costo mensual:
+                ● Course: $4999 MXN
+                ● Carrera $3999 MXN
+                ● Master: $2999 MXN
+                Adicionalmente preguntar si cuenta con alguna beca y aplicar el
+                descuento correspondiente al precio final.
+                ● Beca Facebook: 20% de descuento.
+                ● Beca Google: 15% de descuento.
+                ● Beca Jesua: 50% de descuento.
+                Finalmente, además del precio mensual con descuento, indicar al usuario
+                cuánto gastaría en total por el curso elegido, tomando en cuenta las
+                siguientes duraciones:
+                ● Course: 2 meses
+                ● Carrera 6 meses
+                ● Master: 12 meses</p>
+            <input id="inputEjercicio9-1" list="list1" placeholder="Seleccione el Programa">
+            <datalist id="list1">
+                <option value="Course">
+                <option value="Carrera">
+                <option value="Master">
+            </datalist>
+            <input id="inputEjercicio9-2" list="list2" placeholder="Seleccione Beca">
+            <datalist id="list2">
+                <option value="Beca Facebook">
+                <option value="Beca Google">
+                <option value="Beca Jesua">
+            </datalist>
+            <h5>Precio Mensual: <span id="resultado9"></span></h5>
+            <h5>Precio Total: <span id="resultado91"></span></h5>
+            <button type="submit" onclick="ejercicio9()">Enviar</button>
+        </div>
+        <div>
+            <h3>Ejercicio 10</h3>
+            <p>Realizar un programa que ayude a calcular el total a pagar de acuerdo a la
+            distancia recorrida por un vehículo con cargo extra por los litros
+            consumidos, tomando en consideración lo siguiente:
+            Si el vehículo es “coche”, el precio kilometro ha de ser 0.20, si es “moto”
+            ha de ser 0.10 y si es “autobús” 0.5.
+            Si los litros consumidos están entre 0 y 100 se ha de añadir 5 al costo
+            total, si es mayor la cantidad de litros consumidos se ha de añadir 10 al
+            total. Considere qué:
+            total a pagar = (precio kilometro x kms recorridos) + extra por litros
+            consumidos.</p>
+            <input id="inputEjercicio10-1" list="list" placeholder="Seleccione tipo Vehiculo">
+            <datalist id="list">
+                <option value="Moto">
+                <option value="Coche">
+                <option value="Autobús">
+            </datalist>
+            <input id="inputEjercicio10-2" type="number" placeholder="Distancia recorrida">
+            <input id="inputEjercicio10-3" type="number" placeholder="Litros Consumidos">
+            <h5>Resultado: <span id="resultado10"></span></h5>
+            <button type="submit" onclick="ejercicio10()">Enviar</button>
+        </div>
+
+
+
+
+    </main>
+    <footer>
+        <h6>By Juan M.</h6>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
