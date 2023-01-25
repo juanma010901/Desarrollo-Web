@@ -36,21 +36,16 @@ function ejercicio2() {
 
 // Ejercicio 3
 
-function agregarNumeros(input) {
-    let vector = [];
-    vector.push(input);
-}
-
 function ejercicio3() {
     let input = document.getElementById("inputEjercicio3").value;
+    let vector = [];
     while(input != 0) {
-        agregarNumeros(input);
+        vector.push(input);     
     }
     let salida = document.getElementById("resultado3");
-
+    salida.innerHTML = "";
+    salida.innerHTML = `[${vector}]`;
 }
-
-
 
 // Ejercicios FOR
 // Ejercicio 1
