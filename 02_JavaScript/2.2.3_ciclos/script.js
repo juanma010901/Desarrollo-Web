@@ -37,14 +37,59 @@ function ejercicio2() {
 // Ejercicio 3
 
 function ejercicio3() {
-    let input = document.getElementById("inputEjercicio3").value;
+    let input;
     let vector = [];
-    while(input != 0) {
-        vector.push(input);     
-    }
+    do {
+        input = parseInt(prompt("Ingrese un número (0 para msalir y mostrar el resultado):"));
+        vector.push(input);
+    } while (input !== 0);
     let salida = document.getElementById("resultado3");
     salida.innerHTML = "";
-    salida.innerHTML = `[${vector}]`;
+    salida.innerHTML = `[${vector.slice(0,vector.length-1)}]`;
+}
+
+// Ejericio 4
+
+function ejercicio4() {
+    let input;
+    let vector = [];
+    do {
+        input = prompt("Ingrese una cadena (vacía para salir y mostar el resultado");
+        vector.push(input);
+    } while (input !== "");
+    let salida = document.getElementById("resultado4");
+    salida.innerHTML = "";
+    salida.innerHTML = `"${vector.join(' ')}"`
+}
+
+// Ejercicio 5
+
+function ejercicio5() {
+    let inp;
+    let input;
+    let vector = [];
+    do {
+        inp = prompt("Ingrese un día de la semana");
+        input = inp.toLocaleLowerCase();
+        vector.push(input);
+        if(input === "lunes") {
+            alert("Con moral");
+        } else if (input === "martes") {
+            alert("Al menos no es lunes");
+        } else if (input === "miercoles" || input === "miércoles") {
+            alert("Media semana!");
+        } else if (input === "jueves") {
+            alert("Juernes, ya casi");
+        } else if (input === "viernes") {
+            alert("Último día, moral");
+        } else if (input === "sabado" || input === "sábado") {
+            alert("Descansito");
+        } else if (input === "domingo"){
+            alert("Ve a descansar, mañana es lunes");
+        } else {
+            alert("Qué calendario usas tú?");
+        }
+    } while (input !== "domingo");
 }
 
 // Ejercicios FOR
