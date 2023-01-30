@@ -1,52 +1,60 @@
 // Ejercicio Funciones
 // Ejercicio 1
 
-let salida1 = document.getElementById("resultado1");
-let salida2 = document.getElementById("resultado2");
-let salida3 = document.getElementById("resultado3");
-let red = "🔴";
-let green = "🟢";
-let yellow = "🟡";
+function ejercicio1f() {
+    let colors = ["🔴","🟢","🟡","🔴"];
 
-function luzRoja() {
-    salida1.innerHTML = red;
-}
-function luzRojaOff() {
-    salida1.innerHTML = "";
-}
-function luzVerde() {
-    salida2.innerHTML = green;
-}
-function luzVerdeOff() {
-    salida2.innerHTML = "";
-}
-function luzAmarilla() {
-    salida3.innerHTML = yellow;
-}
-function luzAmarillaOff() {
-    salida3.innerHTML = "";
-}
-
-function ejercicio1() {
-    let input = document.getElementById("inputEjercicio1").value;
-    console.log(input);
-    let estados = [
-    setTimeout(luzRoja,0),
-    setTimeout(luzRojaOff,3000),
-    setTimeout(luzVerde,3000),
-    setTimeout(luzVerdeOff,6000),
-    setTimeout(luzAmarilla,6000),
-    setTimeout(luzAmarillaOff,9000),
-    ];
-    for (var i = 1; i < input; i++) {
-        let repeated = [];
-        repeated = repeated.concat(estados);
-    }
-    console.log(repeated)
-    for(let i=0;i<estados.length;i++) {
-        estados[i]
+    for(let i=0; i<=3; i++) {
+       alert(`${colors[i]}`);
+       console.log(`${colors[i]}`);
     }
 }
 
+// Ejercicio 2
 
+function rojo() {
+    document.body.innerHTML = "";
+    document.write(`<img src='assets/rojo.jpg' alt='rojo' width='400px'>
+        <button type="submit" onclick="verde()">Semáforo</button>
+    `);
+    document.write(`<button type="submit" onclick="location.reload()">Página Principal</button>`);
+}
+
+function verde() {
+    document.body.innerHTML = "";
+    document.write(`<img src='assets/verde.jpg' alt='verde' width='400px'>
+        <button type="submit" onclick="amarillo()">Semáforo</button>
+    `);
+    document.write(`<button type="submit" onclick="location.reload()">Página Principal</button>`);
+}
+
+function amarillo() {
+    document.body.innerHTML = "";
+    document.write(`<img src='assets/amarillo.jpg' alt='amarillo' width='400px'>
+        <button type="submit" onclick="rojo()">Semáforo</button>
+    `);
+    document.write(`<button type="submit" onclick="location.reload()">Página Principal</button>`);
+}
+
+function ejercicio2f() {
+    rojo();
+}
+
+
+// Ejercicio 3
+
+function ejercicio3f() {
+    let colors = ['rojo', 'verde', 'amarillo', 'rojo'];
+
+    for(let i=0; i<colors.length; i++) {
+        setTimeout(function() {
+            document.body.innerHTML = "";
+            document.write(`<img src='assets/${colors[i]}.jpg' alt='${colors[i]}' width='400px'>`);
+        }, 2000*i);
+    }
+    
+    setTimeout(function() {
+        document.write(`<button type="submit" onclick="location.reload()">Página Principal</button>`);
+    }, 8000);
+}
 

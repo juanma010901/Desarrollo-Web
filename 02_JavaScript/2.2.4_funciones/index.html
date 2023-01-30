@@ -23,18 +23,31 @@
             - De rojo pasa a Verde.
             - De amarillo puede pasar a Rojo.
             - De Verde pasa a Amarillo.</p>
-            <input type="number" id="inputEjercicio1">
-            <button type="submit" onclick="ejercicio1()">Enviar</button>
-            <div>
-                <span id="resultado1"></span>
-            </div>
-            <div>
-                <span id="resultado2"></span>
-            </div>
-            <div>
-                <span id="resultado3"></span>
-            </div>
+            <button type="submit" onclick="ejercicio1f()">Enviar</button>
         </div>
+        <div>
+            <h3>Ejercicio 2</h3>
+            <p>Extra Challenge 1: Hacerlo con imágenes:
+            document.write("<img>").</p>
+            <button type="submit" onclick="ejercicio2f()">Enviar</button>
+        </div>
+        <div>
+            <h3>Ejercicio 3</h3>
+            <p>Extra Challenge 2: Usar setInterval y/o setTimeOut para que cambie
+                automáticamente
+                function imprimeHola() {
+                console.log("Hola")
+                }
+                function detente(intervalo) {
+                clearInterval(intervalo)
+                console.log("Listo!")
+                }
+                var intervalo = setInterval(imprimeHola(),1000)
+                setTimeout(detener(intervalo),5000)</p>
+            <button type="submit" onclick="ejercicio3f()">Semáforo</button>
+        </div>
+
+        
     <script src="script.js"></script>
 </body>
 </html>
