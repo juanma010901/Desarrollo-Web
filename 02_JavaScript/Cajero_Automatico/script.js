@@ -99,19 +99,11 @@ function consultarSaldo() {
     let saldo = document.getElementById("saldo");
 
     for (let i=0; i<cuentas.length; i++) {
-        console.log(cuentas[i].nombre);
+        // console.log(cuentas[i].nombre);
         if (cuentas[i].nombre == cuenta) {
             saldo.innerHTML = `$${cuentas[i].saldo}`;
         }
     }
-}
-
-function consultaSaldoTotal() {
-
-}
-
-function consultaSaldoIngresado() {
-
 }
 
 
@@ -160,6 +152,27 @@ function retirarSaldo() {
                 // console.log(cuentas);
                 window.location.href = "5.3.1-nuevo-ret.html";
             }            
+        }
+    }
+}
+
+
+// Consulta Total
+
+function consultaSaldoTotal() {
+    let cuentas = JSON.parse(localStorage.getItem('cuentas'));
+    let cuenta = JSON.parse(localStorage.getItem('cuenta'));
+    let ingreso = localStorage.getItem('saldoIngresado');
+    let saldo = document.getElementById("saldo");
+    let posingreso = document.getElementById("posingreso");
+
+    console.log(typeof(ingreso));
+    posingreso.innerHTML = `$${ingreso}`;
+
+    for (let i=0; i<cuentas.length; i++) {
+        // console.log(cuentas[i].nombre);
+        if (cuentas[i].nombre == cuenta) {
+            saldo.innerHTML = `$${cuentas[i].saldo}`;
         }
     }
 }
