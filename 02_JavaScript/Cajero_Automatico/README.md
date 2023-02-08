@@ -25,14 +25,14 @@ Accede haciendo click en el siguiente icono:
 
 ## Acciones posibles
 
-- La opción de **_Verificar Saldo_** mostrará el saldo actual de la cuenta 💸
+![image](https://user-images.githubusercontent.com/119358374/217657872-cf7741d5-ffb4-4ff4-a4d2-cf7aaeb056c0.png)
 
+
+- La opción de **_Verificar Saldo_** mostrará el saldo actual de la cuenta 💸
 
 - La opción de **_Ingresar Saldo_** te permitirá ingresar saldo a tu cuenta con un tope máximo de $990 💰
 
-
 - La opción de **_Ingresar Saldo_** te permitirá ingresar saldo de tu cuenta pero debes mantener más de $10 💰
-
 
 - La opción **_Cambiar contraseña_** te permite cambiar la contraseña de tu cuenta y pide la contraseña nueva 🏧
 
