@@ -4,10 +4,10 @@
 }
 
 body {
-    background-image: url(Resources/ladrillos.jpg);
+    background-image: url(Resources/fondo.webp);
     background-size: cover;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Roboto Slab', serif;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: 'Roboto Slab', serif; */
 }
 
 .interfaz {
