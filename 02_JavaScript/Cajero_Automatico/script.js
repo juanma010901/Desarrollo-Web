@@ -37,6 +37,28 @@ window.addEventListener("load", function () {
         localStorage.setItem("cuentas", JSON.stringify(cuentas));
         localStorage.setItem("passwords", JSON.stringify(passwords));
     }
+
+    let cuentas = JSON.parse(localStorage.getItem("cuentas"));
+    let passwords = JSON.parse(localStorage.getItem("passwords"));
+
+    if (!cuentas) {
+        cuentas = [
+            { nombre: "Mali", saldo: 200 },
+            { nombre: "Gera", saldo: 290 },
+            { nombre: "Maui", saldo: 67 },
+        ];
+        this.localStorage.setItem("cuentas", JSON.stringify(cuentas));
+    }
+
+    if (!passwords) {
+        passwords = [
+            { nombre: "Mali", password: 1234 },
+            { nombre: "Gera", password: 1234 },
+            { nombre: "Maui", password: 1234 },
+        ];
+        this.localStorage.setItem("passwords", JSON.stringify(passwords));
+    }
+
 });
 
 
@@ -180,7 +202,7 @@ function consultaSaldoTotal() {
     let saldo = document.getElementById("saldo");
     let posingreso = document.getElementById("posingreso");
 
-    console.log(typeof ingreso);
+    // console.log(typeof ingreso);
     posingreso.innerHTML = `$${ingreso}`;
 
     for (let i = 0; i < cuentas.length; i++) {
@@ -207,6 +229,7 @@ function cambiarContra() {
                 passwords[i].password = contraseña;
                 localStorage.setItem("passwords", JSON.stringify(passwords));
                 alert("Contraseña cambiada");
+                localStorage.removeItem("token");
                 window.location.href = "3-contraseña.html";
             }
         }
