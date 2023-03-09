@@ -5,7 +5,7 @@
 // })
 // console.log('end');
 
-// Solo imprime un 1 gracias al console.log que hay dentro de la promesa
+// 
 
 // Ejercicios 2
 // console.log('start');
@@ -18,12 +18,7 @@
 // })
 // console.log('end');
 
-// Se ejecuta el código sincrono y luego el código asíncrono
-// Por esta razón se va a ejecutar en este orden:
-// start
-// 1
-// end
-// 2
+// 
 
 // Ejercicio3
 // console.log('start');
@@ -37,11 +32,7 @@
 // })
 // console.log('end');
 
-// start
-// 1
-// 3
-// end
-// 2
+// 
 
 // Ejercicio 4
 // console.log('start');
@@ -53,9 +44,7 @@
 // })
 // console.log('end');
 
-// start
-// 1
-// end
+// 
 
 // Ejercicio 5
 // console.log('start')
@@ -69,11 +58,7 @@
 // })
 // console.log('end')
 
-// start
-// middle
-// end
-// 1
-// success
+// 
 
 // Ejercicio 6
 // console.log('start')
@@ -85,10 +70,7 @@
 // })
 // console.log('end')
 
-// start
-// end
-// 1
-// 2
+// 
 
 // Ejercicio7
 // console.log('start')
@@ -100,10 +82,7 @@
 // })
 // console.log('end')
 
-// start
-// end
-// resolve
-// setTimeout
+// 
 
 // Ejercicio 8
 // const promise = new Promise((resolve, reject) => {
@@ -119,11 +98,7 @@
 //     console.log(res);
 // });
 
-// 1
-// 2
-// timerStart
-// timerEnd
-// success
+// 
 
 // Ejercicio 9
 // console.log('start');
@@ -141,4 +116,3 @@
 // }, 0)
 // console.log('end');
 
-// start

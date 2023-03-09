@@ -1,13 +1,13 @@
 // Ejercicio 1
-function mensaje() {
-    console.log("Este es un mensaje")
+function mensaje(nombre) {
+    console.log("Hola, " + nombre)
 }
 
-function ejercicio1(mensaje) {
-    mensaje();
+function ejercicio1(mensaje, nombre) {
+    mensaje(nombre);
 }
 
-ejercicio1(mensaje)
+ejercicio1(mensaje, "Juan")
 
 
 // Ejercicio 2
@@ -27,19 +27,19 @@ ejercicio2(123, retornar)
 //  Ejercicio 3
 
 function suma(num1, num2) {
-    console.log(num1 + num2);
+    return(num1 + num2);
 }
 
 function resta(num1, num2) {
-    console.log(num1 - num2);
+    return(num1 - num2);
 }
 
 function multiplicacion(num1, num2) {
-    console.log(num1 * num2);
+    return(num1 * num2);
 }
 
 function ejercicio3(var1, var2, operacion) {
-    operacion(var1, var2);
+    console.log(operacion(var1, var2));
 }
 
 let var1 = 2
