@@ -85,18 +85,18 @@
 // 
 
 // Ejercicio 8
-// const promise = new Promise((resolve, reject) => {
-//     console.log(1);
-//     setTimeout(() => {
-//     console.log("timerStart");
-//     resolve("success");
-//     console.log("timerEnd");
-//     }, 0);
-//     console.log(2);
-// });
-// promise.then((res) => {
-//     console.log(res);
-// });
+const promise = new Promise((resolve, reject) => {
+    console.log(1);
+    setTimeout(() => {
+    console.log("timerStart");
+    resolve("success");
+    console.log("timerEnd");
+    }, 0);
+    console.log(2);
+});
+promise.then((res) => {
+    console.log(res);
+});
 
 // 
 
