@@ -7,6 +7,7 @@
     <title>Pokedex</title>
     <link rel="icon" href="assets/th.webp" type="image/svg+xml">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
 
@@ -15,20 +16,29 @@
             <div class="nav">
                 <a href="#"><img src="assets/th.webp" alt="Pokedex" id="icon"></a>
                 <h1 id="title">Pokedex</h1>
-                <div>
-                    <ul id="ul-navbar">
-                        <li>
-                            <button class="boton" type="submit" onclick="buscar()">Buscar</button>
-                        </li>
-                    </ul>
+                <div class="buscar">
+                    <button class="boton" id="cancelar" type="submit" onclick="cancelar()">
+                        <span class="material-symbols-outlined">
+                            close
+                        </span>
+                    </button>
                     <input type="text" id="name" placeholder="Nombre del Pokemon">
+                    <button class="boton" type="submit" onclick="buscar()">Buscar</button>
                 </div>
             </div>
         </div>
     </header>
 
+    <main>
+        <div class="repositorio-tarjetas" id="repositorio-tarjetas"></div>
 
-    <div class="repositorio-tarjetas"></div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <h5>Copyright © 2023. <a id="refe" href="https://github.com/juanma010901" target="_blank">@juanma010901</a></h5>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
