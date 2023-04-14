@@ -31,7 +31,7 @@ function Table() {
       <tbody>
         <tr>
           <td style={tdStyle}>1</td>
-          <td style={tdStyle}>Juan</td>
+          <td style={tdStyle}>Juan Manuel</td>
           <td style={tdStyle}>0</td>
         </tr>
       </tbody>
