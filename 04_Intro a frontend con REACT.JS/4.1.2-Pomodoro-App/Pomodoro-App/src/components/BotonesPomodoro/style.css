@@ -1,0 +1,20 @@
+.seetings {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 1.8rem;
+}
+
+.seetings label{
+    color: white;
+}
+
+.seetings input {
+    padding: 20px;
+    border-radius: 4px;
+    color: black;
+    border: transparent;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
