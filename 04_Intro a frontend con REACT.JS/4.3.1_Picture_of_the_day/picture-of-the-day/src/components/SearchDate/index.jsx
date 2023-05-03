@@ -10,18 +10,6 @@ export default function SearchDate () {
     const goToDaySelected = (e) => {
         e.preventDefault();
         navigate(`/photo/${dateSelect}`)
-        // axios.get(`${nasaEndpoint}planetary/apod?date=${dateSelect}`, {
-        //     params: {
-        //         api_key: nasaApiKey
-        //     }
-        // })
-        //     .then(response => {
-        //         setApod(response.data)
-        //         console.log(response.data)
-        //     })
-        //     .catch(error => {
-        //         console.error(error)
-        //     })
     }
     return (
         <div>

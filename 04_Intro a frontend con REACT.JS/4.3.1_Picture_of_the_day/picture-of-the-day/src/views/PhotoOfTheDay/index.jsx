@@ -27,27 +27,6 @@ function PhotoOfTheDay() {
             })
     }, [])
 
-
-    // const goToDaySelected = (e) => {
-    //     e.preventDefault();
-    //     axios.get(`${nasaEndpoint}planetary/apod?date=${dateSelect}`, {
-    //         params: {
-    //             api_key: nasaApiKey
-    //         }
-    //     })
-    //         .then(response => {
-    //             setApod(response.data)
-    //             console.log(response.data)
-    //         })
-    //         .catch(error => {
-    //             console.error(error)
-    //         })
-    // }
-
-
-
-    // const today = new Date().toISOString().slice(0, 10);
-
     return (
         <div>
             {

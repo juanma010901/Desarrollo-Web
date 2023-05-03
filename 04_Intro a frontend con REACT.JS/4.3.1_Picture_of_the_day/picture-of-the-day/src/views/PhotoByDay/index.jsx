@@ -11,9 +11,10 @@ function PhotoByDay () {
     const [apod, setApod] = useState({})
     let {fechaQueSeleccionoMiUsuario} = useParams()
     useEffect(()=>{
-        axios.get(`${nasaEndpoint}planetary/apod?date=${fechaQueSeleccionoMiUsuario}`, {
+        axios.get(`${nasaEndpoint}planetary/apod`, {
             params: {
-                api_key: nasaApiKey
+                api_key: nasaApiKey,
+                date: fechaQueSeleccionoMiUsuario
             }
         })
             .then(response => {
