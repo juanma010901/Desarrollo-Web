@@ -54,6 +54,9 @@ const User = () => {
             <Link to="/">
                 <button>Regresar a home</button>
             </Link>
+            <Link to="/users">
+                <button>Listado de usuarios</button>
+            </Link>
         </div>
     );
 };
