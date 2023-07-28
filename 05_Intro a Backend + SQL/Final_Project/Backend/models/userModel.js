@@ -21,7 +21,7 @@ const userSchema = mongoose.Schema({
     },
     rol: {
         type: String,
-        required: true,
+        required: true, 
     },
     phone: {
         type: Number,
@@ -30,8 +30,7 @@ const userSchema = mongoose.Schema({
     },
     email: {
         type: String,
-        // required: true,
-        default: "",
+        required: true,
     },
     password: {
         type: String,
